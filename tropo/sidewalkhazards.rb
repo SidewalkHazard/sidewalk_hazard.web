@@ -4,5 +4,10 @@ else
   call "+1#{$numberToDial}"
 end
 sleep 3
-say $msg
+result = ask "Thank you for using A T and T hack a thon app for reporting side walk hazards. Please press one to confirm you initiated this request.", { :choices => "1", :timeout => 45.0, :attempts => 2}
+if result.value == "1"
+  say "Thank You for verifying your phone number"
+else
+  say "You are obviously not human"
+end
 log "called #{$numberToDial}"
