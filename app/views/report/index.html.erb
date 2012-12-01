@@ -1,2 +1,8 @@
-<h1>Report#index</h1>
-<p>Find me in app/views/report/index.html.erb</p>
+<div style="text-align: center; margin: auto; width: 70%">
+	<h1 style="text-align: center;">List of Reports</h1>
+	<% @reports.each do |report| %>
+		<div style="display: block;">
+			<p><%= report.description %></p>
+			<%= link_to "View Full Report", report %>
+		</div>
+	<% end %>
