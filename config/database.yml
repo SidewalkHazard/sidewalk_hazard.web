@@ -22,7 +22,9 @@ production:
   adapter: mysql2
   pool: 5
   timeout: 5000
+  # mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT
   database: <%=ENV['OPENSHIFT_APP_NAME']%>
   username: <%=ENV['OPENSHIFT_DB_USERNAME']%>
   password: <%=ENV['OPENSHIFT_DB_PASSWORD']%>
-  socket:   <%=ENV['OPENSHIFT_DB_SOCKET']%>
+  host:   <%=ENV['OPENSHIFTMYSQL_DB_HOST']%>
+  port: <%=ENV['OPENSHIFTMYSQL_DB_PORT']%>
