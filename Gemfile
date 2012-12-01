@@ -9,6 +9,7 @@ gem 'sqlite3', :groups => [:development, :testbu]
 
 gem 'mysql2', :group => :production
 gem 'carrierwave'
+gem 'uuidtools'
 #gem 'fog', "~> 1.3.1"
 
 # Gems used only for assets and not required
